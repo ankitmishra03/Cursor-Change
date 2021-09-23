@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "chrome-extension",
+  "permissions": ["activeTab", "tabs"],
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "index.html",
+    "default_title": "A pop-up"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": ["index.html", "/static/*"]
+}

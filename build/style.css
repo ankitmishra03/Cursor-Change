@@ -1,0 +1,24 @@
+body {
+  width: 500px;
+  height: 500px;
+  /* cursor: ; */
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 12px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  height: 55 px;
+  width: 55px;
+}
